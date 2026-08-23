@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#050713" />
+    <meta name="description" content="A little sunflower for Ivy — a light that keeps blooming." />
+    <meta property="og:title" content="A little sunflower for Ivy" />
+    <meta property="og:description" content="A little light that keeps blooming." />
+    <meta property="og:type" content="website" />
+    <title>A little sunflower for Ivy</title>
+  </head>
+  <body>
+    <main id="app" aria-label="Eternal Sunflower birthday gift">
+      <canvas id="sunflower-canvas" aria-hidden="true"></canvas>
+
+      <section class="opening" id="opening" aria-labelledby="opening-title">
+        <div class="opening__halo"></div>
+        <div class="opening__copy">
+          <p class="eyebrow">eternal_sunflower</p>
+          <h1 id="opening-title" data-config="openingRecipient">For Ivy</h1>
+          <p class="opening__note" data-config="openingNote">Something grew here for you.</p>
+          <button class="begin" id="begin-button" type="button">
+            <span data-config="beginLabel">Tap to begin</span><i aria-hidden="true">↗</i>
+          </button>
+        </div>
+        <span class="loading" id="loading" aria-live="polite">Preparing a little light</span>
+      </section>
+
+      <aside class="code-panel" aria-hidden="true">
+        <div class="code-panel__bar"><span>eternal_sunflower.js</span><span>RUNNING ∞</span></div>
+        <pre><code><em>const</em> goldenAngle = π × (3 − √5)
+
+<em>for</em> (seed <em>of</em> light) {
+  seed.grow(<strong>towardTheSun</strong>)
+  seed.remember(<strong>Ivy</strong>)
+}
+
+<em>function</em> <strong>bloomForever</strong>() {
+  return warmth
+    .becomingVisible()
+    .turningSlowly()
+}</code></pre>
+      </aside>
+
+      <section class="birthday" id="birthday" aria-live="polite">
+        <p class="birthday__kicker">a little light, still blooming</p>
+        <h2 data-config="birthdayHeading">Happy Birthday, Ivy 🌻</h2>
+        <p data-config="birthdayMessage">I hope this year gives you more reasons to smile.</p>
+        <p class="birthday__signature" data-config="signature">— Elvin</p>
+      </section>
+
+      <nav class="controls" aria-label="Gift controls">
+        <button id="more-button" class="more" type="button" aria-expanded="false" aria-controls="more-menu">•••</button>
+        <div class="more-menu" id="more-menu" hidden>
+          <button id="replay-button" type="button">↻ Bloom again</button>
+          <button id="about-button" type="button">About this gift</button>
+        </div>
+      </nav>
+
+      <div class="toast" id="toast" role="status"></div>
+      <section class="fallback" id="fallback" hidden>
+        <div>
+          <p class="eyebrow">eternal_sunflower</p>
+          <h2>A little sunflower couldn't bloom<br />on this browser 🌻</h2>
+          <p>Try opening this link in Safari, Chrome, or Edge.</p>
+        </div>
+      </section>
+    </main>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
